@@ -1,0 +1,64 @@
+body{   
+    background: #eee;  
+} 
+
+.bg{
+    background: url(corn.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#form{ 
+    text-align: center;
+    border-radius: 8px; 
+    margin: 110px auto;  
+    background: white;  
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px; 
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    position: absolute;
+    right: 5%;
+    height: 45% ;
+    bottom: 20px;
+}  
+.line
+{
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+#btn{  
+    background-color: #1877f2;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 200px;
+    color: #fff;
+}
