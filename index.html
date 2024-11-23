@@ -1,0 +1,61 @@
+<html>  
+<head>  
+    <title>LOGIN</title>    
+    <link rel = "stylesheet" href = "style.css">   
+</head>  
+<body>  
+        <div class="bg">
+    <div id = "form">   
+        <form name="f1" onsubmit = "return validator()" method = "POST">  
+            <p>    
+                <input type = "text" id ="email" name  = "email" placeholder="Email"/>  
+            </p>  
+            <p>   
+                <input type = "password" id ="pass" name  = "pass" placeholder="Password"/>  
+            </p> 
+            <div class="line"></div>
+            <p>     
+                <input type =  "submit" id = "btn" value = "Log In" />  
+            </p>  
+        </form>  
+    </div>  
+    </div>
+<!--     validation for empty field   -->
+    <script> 
+ 
+function validator() {  
+    var pw = document.getElementById("pass").value;
+    var email = document.getElementById("email").value;
+
+    var hardcodedEmail = "admin@cornhub.com";
+    var hardcodedPassword = "12345";
+   
+   if(email == "" && pw =="") {  
+     document.getElementById("message")
+	 alert("Fill Email and Password");
+     return false;  
+  } 
+  
+  if(pw == "") {  
+     document.getElementById("message")
+	 alert("Password is not filled");
+     return false;  
+  }  
+ if(email == "") {  
+     document.getElementById("message")
+	 alert("Email is not filled");
+     return false;  
+  } 
+  if (email === hardcodedEmail && pw === hardcodedPassword) {
+                // Redirect to the next page on successful login
+                window.location.href = "dashboard.html";
+                alert("Login Successfully");
+                return false; // Prevent default form submission
+            } else {
+                alert("Invalid credentials");
+                return false;
+            }
+}  
+</script>    
+</body>     
+</html>  
